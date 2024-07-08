@@ -16,6 +16,7 @@ struct AddPasswordView: View {
     @State private var password = ""
     @State private var description = ""
     @State private var passwordVisible = false
+    @State private var passwordVisibleWithAnimation = false
     @FocusState private var fieldFocus: Focus?
     
     
@@ -26,9 +27,12 @@ struct AddPasswordView: View {
     private func getEyeView() -> some View {
         HStack {
             Spacer()
-            Image(systemName: !passwordVisible ? "eye.slash" : "eye").padding(.trailing, 4)
+            Image(systemName: !passwordVisibleWithAnimation ? "eye.slash" : "eye").padding(.trailing, 4)
                 .onTapGesture(perform: {
                     passwordVisible.toggle()
+                    withAnimation {
+                        passwordVisibleWithAnimation.toggle()
+                    }
                     if fieldFocus != nil {
                         fieldFocus = chooseFocusForPasswordField()
                     }
@@ -82,8 +86,8 @@ struct AddPasswordView: View {
                     .submitLabel(.done)
                     .onSubmit(addData)
             }
-            .textFieldStyle(.roundedBorder)
             .font(.headline)
+            .padding()
             .overlay {
                 RoundedRectangle(cornerRadius: 4).stroke(Color.black, lineWidth: 1)
             }
@@ -99,7 +103,8 @@ struct AddPasswordView: View {
         }
         .navigationTitle("Add password")
         .padding()
-        .padding(.bottom, 100)
+        .padding(.top, 100)
+        Spacer()
     }
 }
 

@@ -19,7 +19,11 @@ struct MainView: View {
             if authenticator.isAuthenticated {
                 List {
                     ForEach(viewModel.models) { model in
-                        Text(model.getPreviewText())
+                        NavigationLink(destination: {
+                            PasswordView(model: model)
+                        }, label: {
+                            Text(model.getPreviewText())
+                        })
                     }
                     .onDelete(perform: viewModel.deletePasswordModel)
                 }

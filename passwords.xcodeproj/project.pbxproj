@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E97025D12C3C8FE900E81898 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97025CF2C3C8FE800E81898 /* Authenticator.swift */; };
+		E97025D32C3C8FE900E81898 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97025D22C3C8FE900E81898 /* PasswordView.swift */; };
 		E9BF91B72C332C510070A43F /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = E9BF91B62C332C510070A43F /* Resolver */; };
 		E9BF91BB2C332C510070A43F /* Resolver-Static in Frameworks */ = {isa = PBXBuildFile; productRef = E9BF91BA2C332C510070A43F /* Resolver-Static */; };
 		E9C17C8D2C2EFBE5005BABD3 /* passwordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C17C8C2C2EFBE5005BABD3 /* passwordsApp.swift */; };
@@ -48,6 +49,7 @@
 		E91CA5B72C32F7DC005598E6 /* Resolver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Resolver.framework; path = "../../../Library/Developer/Xcode/DerivedData/passwords-euzodrdkdwrvcffoyduzlbtwgbtg/Build/Products/Debug-iphoneos/PackageFrameworks/Resolver.framework"; sourceTree = "<group>"; };
 		E97025CE2C3C246F00E81898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E97025CF2C3C8FE800E81898 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		E97025D22C3C8FE900E81898 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 		E9C17C892C2EFBE5005BABD3 /* passwords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = passwords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9C17C8C2C2EFBE5005BABD3 /* passwordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordsApp.swift; sourceTree = "<group>"; };
 		E9C17C902C2EFBE6005BABD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				E9C17CA02C2EFC8B005BABD3 /* MainView.swift */,
 				E9EBD2742C321C0B00672649 /* AddPasswordView.swift */,
+				E97025D22C3C8FE900E81898 /* PasswordView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9C17CA32C2EFD48005BABD3 /* PasswordRecordModel.swift in Sources */,
+				E97025D32C3C8FE900E81898 /* PasswordView.swift in Sources */,
 				E9C17C8D2C2EFBE5005BABD3 /* passwordsApp.swift in Sources */,
 				E9C17CA12C2EFC8B005BABD3 /* MainView.swift in Sources */,
 				E9EBD2732C3218AC00672649 /* PasswordRecordDataDource.swift in Sources */,
